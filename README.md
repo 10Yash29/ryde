@@ -58,28 +58,21 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```bash
    npm install
 
-Set up environment variables
+## Set Up Environment Variables
 
-Create a .env file in the root of your project and add your keys.
+Create a new file named `.env.local` in the root of your project and add the following content:
 
-EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=
+```env
+EXPO_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=
+EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID=
 
-
-EXPO_PUBLIC_PLACES_API_KEY=
-
-EXPO_PUBLIC_DIRECTIONS_API_KEY=
-
-DATABASE_URL=
-
-EXPO_PUBLIC_SERVER_URL=https://uber.dev/
-
-EXPO_PUBLIC_GEOAPIFY_API_KEY=
-
-EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY=
-
-STRIPE_SECRET_KEY=
-
-
+```
+Replace the values with your actual Appwrite credentials. You can obtain these credentials by signing up & creating a new project on the Appwrite website.
 
 2. Start the app
 
