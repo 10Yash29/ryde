@@ -1,40 +1,55 @@
 # Uber Clone
 
-Built with React Native for handling the user interface, Google Maps for rendering maps with directions, Stripe for handling payments, serverless Postgres for managing databases, and styled with TailwindCSS, **Uber Clone** is a perfect mobile app. The primary goal is to demonstrate how to develop full-stack mobile applications to showcase the developer's skills in a unique manner that creates a lasting impact.
+Built with React Native for handling the user interface, Google Maps for rendering maps with directions, stripe for handling payments, serverless Postgres for managing databases, and styled with TailwindCSS, Uber Clone is a perfect mobile app. The primary goal is to demonstrate how to develop full-stack mobile applications to showcase the developer's skills in a unique manner that creates a lasting impact.
 
 <br />
 
 ## ⚙️ Tech Stack
 
-- **React Native**  
-- **Expo**  
-- **Stripe**  
-- **PostgreSQL**  
-- **Google Maps**  
-- **Zustand**  
-- **Clerk**  
-- **Tailwind CSS**
+-React Native
+-Expo
+-Stripe
+-PostgreSQL
+-Google Maps
+-zustand
+-Clerk
+-Tailwind CSS
 
 <br />
 
 ## 🔋 Features
+👉 Onboarding Flow: Seamless user registration and setup process.
 
-- **Onboarding Flow**: Seamless user registration and setup process.  
-- **Email Password Authentication with Verification**: Secure login with email verification.  
-- **oAuth Using Google**: Easy login using Google credentials.  
-- **Authorization**: Secure access control for different user roles.  
-- **Home Screen with Live Location & Google Map**: Real-time location tracking with markers on a map.  
-- **Recent Rides**: View a list of recent rides at a glance.  
-- **Google Places Autocomplete**: Search any place on Earth with autocomplete suggestions.  
-- **Find Rides**: Search for rides by entering 'From' and 'To' locations.  
-- **Select Rides from Map**: Choose available cars near your location from the map.  
-- **Confirm Ride with Detailed Information**: View complete ride details, including time and fare price.  
-- **Pay for Ride Using Stripe**: Make payments using multiple methods like cards and others.  
-- **Create Rides After Successful Payment**: Book a ride after confirming payment.  
-- **Profile**: Manage account details in the profile screen.  
-- **History**: Review all rides booked so far.  
-- **Responsive on Android and iOS**: Optimized for both Android and iOS devices.  
-- …and many more, including **code architecture** and **reusability**.
+👉 Email Password Authentication with Verification: Secure login with email verification.
+
+👉 oAuth Using Google: Easy login using Google credentials.
+
+👉 Authorization: Secure access control for different user roles.
+
+👉 Home Screen with Live Location & Google Map: Real-time location tracking with markers on a map.
+
+👉 Recent Rides: View a list of recent rides at a glance.
+
+👉 Google Places Autocomplete: Search any place on Earth with autocomplete suggestions.
+
+👉 Find Rides: Search for rides by entering 'From' and 'To' locations.
+
+👉 Select Rides from Map: Choose available cars near your location from the map.
+
+👉 Confirm Ride with Detailed Information: View complete ride details, including time and fare price.
+
+👉 Pay for Ride Using Stripe: Make payments using multiple methods like cards and others.
+
+👉 Create Rides After Successful Payment: Book a ride after confirming payment.
+
+👉 Profile: Manage account details in the profile screen.
+
+👉 History: Review all rides booked so far.
+
+👉 Responsive on Android and iOS: Optimized for both Android and iOS devices.
+
+and many more, including code architecture and reusability
+
 
 <br />
 
@@ -63,16 +78,16 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 Create a new file named `.env.local` in the root of your project and add the following content:
 
 ```env
-EXPO_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
-EXPO_PUBLIC_APPWRITE_PROJECT_ID=
-EXPO_PUBLIC_APPWRITE_DATABASE_ID=
-EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID=
-EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID=
-EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID=
-EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID=
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=
+DATABASE_URL=
+EXPO_PUBLIC_SERVER_URL=https://uber.dev/
+EXPO_PUBLIC_GEOAPIFY_API_KEY=
+EXPO_PUBLIC_GOOGLE_API_KEY=
+EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+STRIPE_SECRET_KEY=
 
 ```
-Replace the values with your actual Appwrite credentials. You can obtain these credentials by signing up & creating a new project on the Appwrite website.
+Replace the placeholder values with your actual Clerk, Stripe, NeonDB, Google Maps, andgeoapify credentials. You can obtain these credentials by signing up on the Clerk, Stripe, NeonDB, Google Maps and geoapify websites respectively.
 
 2. Start the app
 
