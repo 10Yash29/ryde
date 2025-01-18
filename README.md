@@ -41,6 +41,9 @@ Built with React Native for handling the user interface, Google Maps for renderi
 # Demo Videos
 
 Check out the demonstration videos to see Ryde App in action:
+ [![Watch the Short](https://img.youtube.com/vi/PbKEleV2q_g/0.jpg)](https://youtube.com/shorts/PbKEleV2q_g?si=5Q4AEHtcgDjqQC9X)
+
+
 
 
 # Welcome to Your Expo App 👋
